@@ -1,0 +1,43 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.so
+
+# Virtual environments
+.venv
+
+# Data & Models
+data/
+models/
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter & Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Outputs & Logs
+outputs/
+logs/
+*.log
+submissions/
+
+# Kaggle Kernels
+animalclef2026-starter-notebook/
