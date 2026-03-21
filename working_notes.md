@@ -53,10 +53,10 @@
    - 水下拍攝：顏色、光照不穩定
    - 畫質差異大：清晰照 vs 模糊照
 
-3. **樣本稀疏問題**
-   - 大多數個體只出現 1-2 張照片
-   - 無法靠統計學方法找到身體標記（如貝殼紋路）
-   - 單張噪音點無法整合
+3. **Embedding 角度敏感性過高**
+   - 同一隻動物的照片因視角、光線、拍攝距離不同，embedding 特徵差異巨大
+   - MegaDescriptor 無法識別「這是同一個個體的不同角度」
+   - DBSCAN 因此把同個體的不同照片當作不同個體，無法聚合
 
 4. **聚類診斷結果**
    - LynxID2025: 100% noise（0 clusters）
@@ -64,7 +64,7 @@
    - SeaTurtleID2022: 4 clusters, 97.3% noise, silhouette = -0.0017（幾乎隨機）
    - TexasHornedLizards: 100% noise（0 clusters）
 
-**結論**: 調整 DBSCAN 參數是「修修補補」，但 embedding 本身就混亂，clustering 再怎麼調都改善有限
+**結論**: embedding 對視角/光線/距離太敏感，同個體的不同照片被 DBSCAN 視為不同群。調整聚類參數無法修正根本問題，必須改善 embedding 的「視角魯棒性」
 
 ---
 
