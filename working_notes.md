@@ -17,53 +17,103 @@
 
 ---
 
-## Session 2 Plan: EDA (Next)
+## Session 2: EDA & Embedding Analysis (2026-03-21)
 
-目标：先用 EDA 找到可解释的调参方向，再进行下一轮提交。
+### 完成工作
+✅ 實作 EDA pipeline (`eda.py`)：
+- 數據集分布統計（dataset/species/split）
+- 圖像尺寸分析（寬、高、長寬比）
+- UMAP 降維 + HDBSCAN/DBSCAN 聚類診斷
+- 沉默分值 (silhouette score) 評估
 
-**Tasks**:
-1. 统计每个 dataset 的 train/test 数量
-2. train identity 分布（长尾、头部占比）
-3. 图像尺寸分布（宽、高、长宽比）
-4. 不同数据源的拍摄条件差异（水下/圈养/野外）
-5. test set 基础质量检查（模糊、遮挡、方向）
+✅ Eps grid search：
+- LynxID2025: 0.30
+- SalamanderID2025: 0.20
+- SeaTurtleID2022: 0.40
+- TexasHornedLizards: 0.24
 
----
-
-## EDA Checklist
-
-- [ ] 统计 train/test 样本数（按 dataset）
-- [ ] 统计 train identity 数与每个 identity 样本数
-- [ ] 检查图像格式和大小范围
-- [ ] 可视化长尾分布（identity histogram）
-- [ ] 抽样可视化异常图片
+✅ UMAP 聚類診斷結果（test split, 300 samples/dataset）
 
 ---
 
-## 实验日志 (Experiment Log)
+### 根本問題診斷 ⚠️
 
-### Exp 1: Baseline v1 (Local Reproduction)
+**症狀**: 調整 DBSCAN eps 效果有限，分數卡在 **0.14602**
+
+**根本原因**: **Embedding 品質不足**
+
+具體表現：
+
+1. **同個體散布過開**
+   - 同一隻動物的不同照片在 embedding 空間裡散得很開
+   - 無法靠空間密度有效分群
+
+2. **海龜數據最嚴重**
+   - 頭部特寫 vs 全身照：特徵完全不同
+   - 水下拍攝：顏色、光照不穩定
+   - 畫質差異大：清晰照 vs 模糊照
+
+3. **樣本稀疏問題**
+   - 大多數個體只出現 1-2 張照片
+   - 無法靠統計學方法找到身體標記（如貝殼紋路）
+   - 單張噪音點無法整合
+
+4. **聚類診斷結果**
+   - LynxID2025: 100% noise（0 clusters）
+   - SalamanderID2025: 100% noise（0 clusters）
+   - SeaTurtleID2022: 4 clusters, 97.3% noise, silhouette = -0.0017（幾乎隨機）
+   - TexasHornedLizards: 100% noise（0 clusters）
+
+**結論**: 調整 DBSCAN 參數是「修修補補」，但 embedding 本身就混亂，clustering 再怎麼調都改善有限
+
+---
+
+### 改進方向 (Future)
+
+1. **強化 Embedding 品質**（高優先級）
+   - 嘗試不同預訓練模型（vision transformer？）
+   - 微調特徵提取器（fine-tune on training split）
+   - 引入 metric learning（triplet loss, contrastive learning）
+   - 集成多個模型
+
+2. **針對數據特性優化**
+   - 海龜：分離「頭部照」和「全身照」進行獨立聚類再融合
+   - 處理光照/顏色差異（色彩正規化、augmentation）
+
+3. **後處理優化**
+   - 訓練集身體標記匹配（SIFT/ORB）輔助測試集
+   - 多模態融合（embedding + visual feature）
+
+---
+
+## 實驗日誌 (Experiment Log)
+
+### Exp 1: Baseline v1 (MegaDescriptor-L-384)
 **Status**: ✅ Done
 
 **Config**:
-- device: cuda
-- batch_size: default (32)
-- clustering: DBSCAN with dataset-specific default eps
-- model policy: MiewID for Lynx/Texas, fallback to MegaDescriptor if incompatible
+- Model: MegaDescriptor-L-384 (384-D)
+- Clustering: DBSCAN with dataset-specific eps
+- Device: CUDA (RTX 3050 Laptop, 4GB VRAM)
+- Batch size: 2-4
 
-**Result**:
+**Results**:
 - Public score: `0.14602`
+- Eps grid search: LynxID2025=0.30, SalamanderID2025=0.20, SeaTurtleID2022=0.40, TexasHornedLizards=0.24
 
-**Message**:
-- `Baseline v1: DBSCAN eps default, CUDA run on RTX 3050 laptop, local starter reproduction`
+**Notes**:
+- Eps 調整空間有限（±0.05 觀察不到顯著改變）
+- UMAP 診斷顯示 embedding 混亂（大部分點都是 noise）
+- 需要改善 embedding 品質，不是聚類參數問題
 
-### Exp 2: EDA-driven tuning
-**Status**: ⏳ Next
+### Exp 2: Embedding Improvement (Next phase)
+**Status**: ⏳ Planning
 
-**Plan**:
-1. 完成 EDA checklist
-2. 基于 EDA 设定 eps 搜索范围
-3. 生成 3-5 版 submission 比较
+**Candidates**:
+1. Fine-tune on training data with contrastive loss
+2. Try ViT backbone instead of ResNet-based
+3. Ensemble multiple models
+4. Custom loss for identity clustering
 
 ---
 

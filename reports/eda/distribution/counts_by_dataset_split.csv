@@ -1,0 +1,8 @@
+dataset,split,count
+LynxID2025,test,946
+LynxID2025,train,2957
+SalamanderID2025,test,689
+SalamanderID2025,train,1388
+SeaTurtleID2022,test,500
+SeaTurtleID2022,train,8729
+TexasHornedLizards,test,274
