@@ -1,0 +1,17 @@
+dataset,orientation,count
+LynxID2025,back,167
+LynxID2025,front,200
+LynxID2025,left,1676
+LynxID2025,right,1615
+LynxID2025,unknown,245
+SalamanderID2025,bottom,3
+SalamanderID2025,left,3
+SalamanderID2025,right,896
+SalamanderID2025,top,1175
+SeaTurtleID2022,down,34
+SeaTurtleID2022,front,118
+SeaTurtleID2022,left,2552
+SeaTurtleID2022,right,2144
+SeaTurtleID2022,top,834
+SeaTurtleID2022,topleft,1354
+SeaTurtleID2022,topright,1490

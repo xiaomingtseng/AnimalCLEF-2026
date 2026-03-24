@@ -1,0 +1,148 @@
+Loaded orientation predictions: 500 images
+SeaTurtleID2022 Test Set: 500 images
+
+================================================================================
+Orientation-Aware Clustering Analysis (Test Set)
+================================================================================
+
+[0] Applying Orientation Mapping
+--------------------------------------------------------------------------------
+Original orientations -> Merged groups:
+         top -> top_view     (80 images)
+     topleft -> top_view     (78 images)
+    topright -> top_view     (113 images)
+        left -> side_view    (95 images)
+       right -> side_view    (123 images)
+       front -> front        (11 images)
+        down -> down         (0 images)
+
+Merged orientation distribution:
+orientation_group
+top_view     271
+side_view    218
+front         11
+Name: count, dtype: int64
+
+[1] Feature Extraction (MegaDescriptor-L-384)
+--------------------------------------------------------------------------------
+  0%|                                                                       | 0/125 [00:00<?, ?it/s]  1%|¢m                                                              | 1/125 [00:18<39:04, 18.91s/it]  3%|¢i¢i                                                             | 4/125 [00:19<07:47,  3.86s/it]  6%|¢i¢i¢i¢m                                                           | 7/125 [00:21<03:53,  1.98s/it]  8%|¢i¢i¢i¢i¢p                                                         | 10/125 [00:22<02:26,  1.28s/it] 10%|¢i¢i¢i¢i¢i¢i¢l                                                       | 13/125 [00:23<01:43,  1.08it/s] 13%|¢i¢i¢i¢i¢i¢i¢i¢p                                                      | 16/125 [00:24<01:19,  1.37it/s] 15%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢l                                                    | 19/125 [00:25<01:04,  1.65it/s] 18%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢p                                                   | 22/125 [00:26<00:54,  1.90it/s] 20%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢l                                                 | 25/125 [00:27<00:47,  2.12it/s] 22%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢p                                                | 28/125 [00:28<00:42,  2.30it/s] 25%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢l                                              | 31/125 [00:29<00:38,  2.44it/s] 27%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o                                             | 34/125 [00:30<00:35,  2.54it/s] 30%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k                                           | 37/125 [00:31<00:33,  2.59it/s] 32%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o                                          | 40/125 [00:32<00:32,  2.64it/s] 34%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k                                        | 43/125 [00:33<00:30,  2.68it/s] 37%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o                                       | 46/125 [00:35<00:29,  2.72it/s] 39%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k                                     | 49/125 [00:36<00:27,  2.74it/s] 42%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o                                    | 52/125 [00:37<00:26,  2.76it/s] 44%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k                                  | 55/125 [00:38<00:25,  2.78it/s] 46%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o                                 | 58/125 [00:39<00:24,  2.79it/s] 49%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k                               | 61/125 [00:40<00:22,  2.79it/s] 51%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n                              | 64/125 [00:41<00:21,  2.79it/s] 54%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j                            | 67/125 [00:42<00:20,  2.80it/s] 56%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n                           | 70/125 [00:43<00:19,  2.80it/s] 58%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j                         | 73/125 [00:44<00:18,  2.79it/s] 61%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n                        | 76/125 [00:45<00:17,  2.78it/s] 63%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j                      | 79/125 [00:46<00:16,  2.77it/s] 66%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n                     | 82/125 [00:47<00:15,  2.75it/s] 68%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j                   | 85/125 [00:49<00:14,  2.74it/s] 70%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n                  | 88/125 [00:50<00:13,  2.73it/s] 73%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j                | 91/125 [00:51<00:12,  2.73it/s] 75%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢m               | 94/125 [00:52<00:11,  2.72it/s] 78%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i              | 97/125 [00:53<00:10,  2.72it/s] 80%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢o            | 100/125 [00:54<00:09,  2.73it/s] 82%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢k          | 103/125 [00:55<00:08,  2.75it/s] 85%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n         | 106/125 [00:56<00:06,  2.75it/s] 87%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢j       | 109/125 [00:57<00:05,  2.76it/s] 90%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢n      | 112/125 [00:58<00:04,  2.76it/s] 92%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i     | 115/125 [00:59<00:03,  2.77it/s] 94%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢m   | 118/125 [01:01<00:02,  2.77it/s] 97%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i  | 121/125 [01:02<00:01,  2.77it/s] 99%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢m| 124/125 [01:03<00:00,  2.76it/s]100%|¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i¢i| 125/125 [01:04<00:00,  1.92it/s]
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1865: UserWarning: using precomputed metric; inverse_transform will be unavailable
+  warn("using precomputed metric; inverse_transform will be unavailable")
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:2462: UserWarning: n_neighbors is larger than the dataset size; truncating to X.shape[0] - 1
+  warn(
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1865: UserWarning: using precomputed metric; inverse_transform will be unavailable
+  warn("using precomputed metric; inverse_transform will be unavailable")
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1865: UserWarning: using precomputed metric; inverse_transform will be unavailable
+  warn("using precomputed metric; inverse_transform will be unavailable")
+d:\Kaggle\AnimalCLEF26 @ CVPR & CLEF\.venv\Lib\site-packages\umap\umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[OK] Extracted features: (500, 1536)
+
+[2] Orientation Groups: ['front', 'side_view', 'top_view']
+--------------------------------------------------------------------------------
+Eps grid search range: 0.3 to 0.8 (step 0.05)
+
+================================================================================
+Orientation Group: front
+================================================================================
+Images: 11
+Avg confidence: 0.7385
+Original orientations: {'front': np.int64(11)}
+
+[3] Eps Grid Search for 'front'
+--------------------------------------------------------------------------------
+Eps      Clusters   Noise    Noise %   
+--------------------------------------------------------------------------------
+0.30     0          11       100.0     %
+0.35     0          11       100.0     %
+0.40     0          11       100.0     %
+0.45     0          11       100.0     %
+0.50     0          11       100.0     %
+0.55     0          11       100.0     %
+0.60     0          11       100.0     %
+0.65     0          11       100.0     %
+0.70     0          11       100.0     %
+0.75     1          9        81.8      %
+0.80     1          9        81.8      %
+
+[4] UMAP Visualization (eps=0.40)
+--------------------------------------------------------------------------------
+[OK] Saved: reports\orientation_analysis\test_group_front_umap.png
+
+================================================================================
+Orientation Group: side_view
+================================================================================
+Images: 218
+Avg confidence: 0.7639
+Original orientations: {'right': np.int64(123), 'left': np.int64(95)}
+
+[3] Eps Grid Search for 'side_view'
+--------------------------------------------------------------------------------
+Eps      Clusters   Noise    Noise %   
+--------------------------------------------------------------------------------
+0.30     37         110      50.5      %
+0.35     38         103      47.2      %
+0.40     40         94       43.1      %
+0.45     44         79       36.2      %
+0.50     44         76       34.9      %
+0.55     47         57       26.1      %
+0.60     44         43       19.7      %
+0.65     37         32       14.7      %
+0.70     22         14       6.4       %
+0.75     8          3        1.4       %
+0.80     2          1        0.5       %
+
+[4] UMAP Visualization (eps=0.40)
+--------------------------------------------------------------------------------
+[OK] Saved: reports\orientation_analysis\test_group_side_view_umap.png
+
+================================================================================
+Orientation Group: top_view
+================================================================================
+Images: 271
+Avg confidence: 0.7733
+Original orientations: {'topright': np.int64(113), 'top': np.int64(80), 'topleft': np.int64(78)}
+
+[3] Eps Grid Search for 'top_view'
+--------------------------------------------------------------------------------
+Eps      Clusters   Noise    Noise %   
+--------------------------------------------------------------------------------
+0.30     21         217      80.1      %
+0.35     26         203      74.9      %
+0.40     32         187      69.0      %
+0.45     39         164      60.5      %
+0.50     45         131      48.3      %
+0.55     47         113      41.7      %
+0.60     38         87       32.1      %
+0.65     26         51       18.8      %
+0.70     9          24       8.9       %
+0.75     4          9        3.3       %
+0.80     3          2        0.7       %
+
+[4] UMAP Visualization (eps=0.40)
+--------------------------------------------------------------------------------
+[OK] Saved: reports\orientation_analysis\test_group_top_view_umap.png
+
+[OK] Saved: reports\orientation_analysis\test_orientation_group_clustering.csv
+
+================================================================================
+Summary: Recommended Eps per Orientation Group
+================================================================================
+       front: eps=0.75, clusters=1, noise=81.8% (best available, all >80% noise)
+   side_view: eps=0.55, clusters=47, noise=26.1%
+    top_view: eps=0.55, clusters=47, noise=41.7%
+
+================================================================================
+Analysis Complete!
+================================================================================
+
+Results saved to: reports\orientation_analysis
+
+Next steps:
+  1. Review UMAP plots for each orientation group
+  2. Compare clustering quality to baseline (no orientation split)
+  3. If improved, generate submission using orientation-group-aware clustering

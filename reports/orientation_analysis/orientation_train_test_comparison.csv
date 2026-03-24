@@ -1,0 +1,17 @@
+dataset,orientation,train_count,test_count
+LynxID2025,back,131,36
+LynxID2025,front,163,37
+LynxID2025,left,1258,418
+LynxID2025,right,1175,440
+LynxID2025,unknown,230,15
+SalamanderID2025,bottom,3,0
+SalamanderID2025,left,1,2
+SalamanderID2025,right,600,296
+SalamanderID2025,top,784,391
+SeaTurtleID2022,down,34,0
+SeaTurtleID2022,front,118,0
+SeaTurtleID2022,left,2552,0
+SeaTurtleID2022,right,2144,0
+SeaTurtleID2022,top,834,0
+SeaTurtleID2022,topleft,1354,0
+SeaTurtleID2022,topright,1490,0

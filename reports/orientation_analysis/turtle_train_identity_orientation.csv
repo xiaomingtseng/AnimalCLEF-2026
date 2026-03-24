@@ -1,0 +1,439 @@
+identity,orientations,num_images,num_orientations
+SeaTurtleID2022_t001,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t002,"left, right, top, topleft, topright",17,5
+SeaTurtleID2022_t003,"left, right, top, topleft, topright",28,5
+SeaTurtleID2022_t004,"down, left, right, top, topleft, topright",54,6
+SeaTurtleID2022_t006,"top, topleft",6,2
+SeaTurtleID2022_t007,"left, right, top, topleft, topright",51,5
+SeaTurtleID2022_t008,"left, right, top, topleft, topright",34,5
+SeaTurtleID2022_t009,"left, right, top, topleft, topright",17,5
+SeaTurtleID2022_t011,"left, right, top, topright",6,4
+SeaTurtleID2022_t013,"left, right, top, topleft, topright",18,5
+SeaTurtleID2022_t014,"front, left, right, top, topleft, topright",40,6
+SeaTurtleID2022_t015,"left, right, top, topleft, topright",36,5
+SeaTurtleID2022_t016,"left, right, topright",6,3
+SeaTurtleID2022_t017,"left, right, top, topleft, topright",16,5
+SeaTurtleID2022_t018,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t019,"left, top, topleft",6,3
+SeaTurtleID2022_t020,"left, right, top, topleft, topright",36,5
+SeaTurtleID2022_t021,"left, right, top, topleft, topright",18,5
+SeaTurtleID2022_t022,"left, right, top, topleft, topright",33,5
+SeaTurtleID2022_t023,"front, left, right, top, topleft, topright",60,6
+SeaTurtleID2022_t024,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t025,"down, front, left, right, top, topleft, topright",40,7
+SeaTurtleID2022_t026,"right, top, topleft, topright",10,4
+SeaTurtleID2022_t027,"left, right, topleft, topright",10,4
+SeaTurtleID2022_t028,"front, left, right, top, topleft, topright",63,6
+SeaTurtleID2022_t029,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t031,"left, topright",3,2
+SeaTurtleID2022_t032,"left, topleft, topright",12,3
+SeaTurtleID2022_t033,"front, left, right, top, topleft, topright",76,6
+SeaTurtleID2022_t034,"left, right, top, topright",26,4
+SeaTurtleID2022_t035,"front, left, right, top, topleft, topright",30,6
+SeaTurtleID2022_t036,"left, right, topright",6,3
+SeaTurtleID2022_t037,"left, right, top, topleft, topright",34,5
+SeaTurtleID2022_t038,"front, left, right, top, topleft, topright",41,6
+SeaTurtleID2022_t040,"left, right, top, topleft, topright",34,5
+SeaTurtleID2022_t041,left,2,1
+SeaTurtleID2022_t042,"left, right, top, topleft, topright",11,5
+SeaTurtleID2022_t043,"front, left, right, top, topleft, topright",26,6
+SeaTurtleID2022_t044,"topleft, topright",2,2
+SeaTurtleID2022_t045,"left, right, topright",5,3
+SeaTurtleID2022_t046,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t048,"down, front, left, right, top, topleft, topright",116,7
+SeaTurtleID2022_t049,"left, right, topleft, topright",8,4
+SeaTurtleID2022_t050,"left, right, top, topleft, topright",8,5
+SeaTurtleID2022_t051,"left, topleft, topright",6,3
+SeaTurtleID2022_t052,"front, left, right, top, topleft, topright",29,6
+SeaTurtleID2022_t053,"right, topleft, topright",3,3
+SeaTurtleID2022_t055,"left, right, topleft, topright",4,4
+SeaTurtleID2022_t056,"left, right, top, topleft, topright",12,5
+SeaTurtleID2022_t057,"left, right, top, topleft, topright",6,5
+SeaTurtleID2022_t058,"left, right, top, topleft, topright",7,5
+SeaTurtleID2022_t059,topright,3,1
+SeaTurtleID2022_t060,"left, right",3,2
+SeaTurtleID2022_t061,"left, topleft, topright",7,3
+SeaTurtleID2022_t062,"front, left, right, top, topleft, topright",34,6
+SeaTurtleID2022_t063,"left, right, top, topleft, topright",60,5
+SeaTurtleID2022_t064,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t065,"left, right, top, topleft, topright",19,5
+SeaTurtleID2022_t066,"left, right, topright",4,3
+SeaTurtleID2022_t067,"left, right, top, topleft, topright",51,5
+SeaTurtleID2022_t068,"left, right, top, topleft, topright",28,5
+SeaTurtleID2022_t069,"left, right, top, topleft, topright",16,5
+SeaTurtleID2022_t070,"left, right, top, topleft, topright",21,5
+SeaTurtleID2022_t071,"left, right, top, topleft, topright",7,5
+SeaTurtleID2022_t073,"front, left, right, top, topleft, topright",44,6
+SeaTurtleID2022_t074,"left, right, top, topleft, topright",13,5
+SeaTurtleID2022_t075,"left, top, topleft, topright",29,4
+SeaTurtleID2022_t076,"left, right, top, topleft, topright",31,5
+SeaTurtleID2022_t077,"left, right, top, topleft",15,4
+SeaTurtleID2022_t078,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t079,"left, right, top, topleft, topright",14,5
+SeaTurtleID2022_t080,"left, right, top, topleft, topright",13,5
+SeaTurtleID2022_t081,"left, right, topright",6,3
+SeaTurtleID2022_t082,"left, right, topleft, topright",19,4
+SeaTurtleID2022_t083,"left, top, topright",3,3
+SeaTurtleID2022_t084,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t085,"left, right, top, topleft, topright",18,5
+SeaTurtleID2022_t086,"front, left, right, topleft, topright",17,5
+SeaTurtleID2022_t087,"left, right",2,2
+SeaTurtleID2022_t088,left,2,1
+SeaTurtleID2022_t089,"topleft, topright",2,2
+SeaTurtleID2022_t090,"left, right, top, topleft, topright",19,5
+SeaTurtleID2022_t091,"right, topleft",2,2
+SeaTurtleID2022_t092,"left, right, top, topleft, topright",36,5
+SeaTurtleID2022_t093,"left, topleft, topright",13,3
+SeaTurtleID2022_t094,"left, right, top, topleft, topright",49,5
+SeaTurtleID2022_t095,"front, left, right, top, topleft, topright",46,6
+SeaTurtleID2022_t096,"front, left, right, topright",10,4
+SeaTurtleID2022_t097,"left, right, top, topleft, topright",11,5
+SeaTurtleID2022_t099,"left, right, top, topleft, topright",51,5
+SeaTurtleID2022_t101,"left, right, top, topleft, topright",17,5
+SeaTurtleID2022_t102,"left, right, top, topleft, topright",49,5
+SeaTurtleID2022_t103,left,1,1
+SeaTurtleID2022_t104,"front, left, right, topright",20,4
+SeaTurtleID2022_t105,"left, right, top, topleft, topright",13,5
+SeaTurtleID2022_t106,"left, right, top",4,3
+SeaTurtleID2022_t107,"left, right",5,2
+SeaTurtleID2022_t108,"left, right, top, topleft",16,4
+SeaTurtleID2022_t110,"down, left, right, top, topleft, topright",68,6
+SeaTurtleID2022_t112,"left, topright",3,2
+SeaTurtleID2022_t113,"right, top, topleft, topright",4,4
+SeaTurtleID2022_t114,"left, right, top, topright",10,4
+SeaTurtleID2022_t115,"left, right, top, topleft, topright",25,5
+SeaTurtleID2022_t116,"left, topleft",3,2
+SeaTurtleID2022_t118,"left, right, top, topleft, topright",6,5
+SeaTurtleID2022_t119,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t120,topright,2,1
+SeaTurtleID2022_t121,"down, left, right, top, topleft, topright",20,6
+SeaTurtleID2022_t123,"left, right, topright",5,3
+SeaTurtleID2022_t124,"left, right, top, topright",4,4
+SeaTurtleID2022_t125,"front, left, right, top, topleft, topright",17,6
+SeaTurtleID2022_t127,"right, top, topleft, topright",8,4
+SeaTurtleID2022_t128,"front, left, topleft",4,3
+SeaTurtleID2022_t129,"right, top, topleft, topright",6,4
+SeaTurtleID2022_t130,"left, top, topright",3,3
+SeaTurtleID2022_t131,"front, left, right, top, topright",22,5
+SeaTurtleID2022_t132,"left, top, topleft, topright",9,4
+SeaTurtleID2022_t133,topright,3,1
+SeaTurtleID2022_t135,"right, top, topleft",3,3
+SeaTurtleID2022_t136,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t137,"left, right, top, topleft, topright",32,5
+SeaTurtleID2022_t138,"left, topright",4,2
+SeaTurtleID2022_t139,"left, right, top, topleft, topright",21,5
+SeaTurtleID2022_t140,"left, topleft, topright",5,3
+SeaTurtleID2022_t141,"left, right, top, topleft, topright",42,5
+SeaTurtleID2022_t142,"left, right, topleft, topright",19,4
+SeaTurtleID2022_t143,"left, right, topright",4,3
+SeaTurtleID2022_t144,"left, topleft",7,2
+SeaTurtleID2022_t145,"left, right, top, topleft, topright",11,5
+SeaTurtleID2022_t146,"front, left, right, top, topleft, topright",20,6
+SeaTurtleID2022_t148,"right, top, topleft, topright",5,4
+SeaTurtleID2022_t149,"right, top, topleft",4,3
+SeaTurtleID2022_t150,"left, right, topleft, topright",5,4
+SeaTurtleID2022_t151,"left, right, top, topleft, topright",12,5
+SeaTurtleID2022_t152,"topleft, topright",4,2
+SeaTurtleID2022_t154,"right, topright",3,2
+SeaTurtleID2022_t155,"left, topright",5,2
+SeaTurtleID2022_t156,"left, topleft, topright",5,3
+SeaTurtleID2022_t157,"left, right, top, topleft, topright",26,5
+SeaTurtleID2022_t158,"front, left, right, top, topleft, topright",54,6
+SeaTurtleID2022_t159,"down, left, right, topleft, topright",26,5
+SeaTurtleID2022_t160,"left, right, top, topleft, topright",31,5
+SeaTurtleID2022_t161,"left, right, topleft, topright",11,4
+SeaTurtleID2022_t162,"left, right",5,2
+SeaTurtleID2022_t163,"left, topleft, topright",21,3
+SeaTurtleID2022_t164,"left, right, topleft, topright",10,4
+SeaTurtleID2022_t165,"front, left, right, top, topleft, topright",22,6
+SeaTurtleID2022_t166,"left, right, top, topleft, topright",33,5
+SeaTurtleID2022_t167,"left, right, top, topleft, topright",23,5
+SeaTurtleID2022_t168,"left, topleft, topright",10,3
+SeaTurtleID2022_t169,"right, top, topleft, topright",7,4
+SeaTurtleID2022_t170,"left, topleft, topright",5,3
+SeaTurtleID2022_t171,"left, right, top, topleft, topright",36,5
+SeaTurtleID2022_t172,"left, right, top, topleft, topright",14,5
+SeaTurtleID2022_t173,right,4,1
+SeaTurtleID2022_t174,"front, left, right, topleft, topright",40,5
+SeaTurtleID2022_t175,"front, left, right, topleft",31,4
+SeaTurtleID2022_t177,left,3,1
+SeaTurtleID2022_t180,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t181,"left, topleft, topright",7,3
+SeaTurtleID2022_t182,"right, topleft, topright",6,3
+SeaTurtleID2022_t183,"left, right, top, topleft",8,4
+SeaTurtleID2022_t184,"left, right, top, topleft, topright",14,5
+SeaTurtleID2022_t185,topleft,3,1
+SeaTurtleID2022_t186,"left, topleft, topright",11,3
+SeaTurtleID2022_t189,"left, right, top, topleft, topright",29,5
+SeaTurtleID2022_t190,right,1,1
+SeaTurtleID2022_t191,"left, right, topleft, topright",8,4
+SeaTurtleID2022_t192,"left, right, top, topleft, topright",12,5
+SeaTurtleID2022_t194,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t195,"right, top, topleft",8,3
+SeaTurtleID2022_t196,"right, top, topleft, topright",7,4
+SeaTurtleID2022_t197,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t198,"left, topleft",3,2
+SeaTurtleID2022_t199,"left, right, top, topleft, topright",40,5
+SeaTurtleID2022_t200,"left, right, top, topleft, topright",46,5
+SeaTurtleID2022_t201,"front, left, right, top, topleft, topright",53,6
+SeaTurtleID2022_t202,"front, left, right, top, topleft, topright",20,6
+SeaTurtleID2022_t203,"front, left, right, top, topleft, topright",32,6
+SeaTurtleID2022_t204,"down, front, left, right, top, topleft, topright",79,7
+SeaTurtleID2022_t205,"left, topleft",4,2
+SeaTurtleID2022_t206,"left, right, top, topleft, topright",12,5
+SeaTurtleID2022_t207,"right, top, topright",6,3
+SeaTurtleID2022_t208,"left, topleft, topright",10,3
+SeaTurtleID2022_t211,"top, topleft, topright",6,3
+SeaTurtleID2022_t212,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t213,"front, left, right, top, topleft, topright",47,6
+SeaTurtleID2022_t214,"topleft, topright",10,2
+SeaTurtleID2022_t215,"front, left, right, topleft, topright",19,5
+SeaTurtleID2022_t216,"left, right, top, topleft, topright",60,5
+SeaTurtleID2022_t217,"down, front, left, right, top, topleft, topright",168,7
+SeaTurtleID2022_t219,"left, topleft",8,2
+SeaTurtleID2022_t220,topleft,8,1
+SeaTurtleID2022_t221,"front, left, right, top, topleft, topright",75,6
+SeaTurtleID2022_t222,"right, top, topright",5,3
+SeaTurtleID2022_t223,"left, right, top, topleft, topright",8,5
+SeaTurtleID2022_t224,"left, top, topleft, topright",17,4
+SeaTurtleID2022_t225,"left, right, top, topleft, topright",32,5
+SeaTurtleID2022_t226,"left, right, top, topleft, topright",20,5
+SeaTurtleID2022_t227,"left, right, top, topright",9,4
+SeaTurtleID2022_t228,"left, right, top, topleft, topright",18,5
+SeaTurtleID2022_t229,"front, left, right, top, topleft, topright",15,6
+SeaTurtleID2022_t230,"front, left, right, top, topleft, topright",50,6
+SeaTurtleID2022_t231,"down, front, left, right, top, topleft, topright",64,7
+SeaTurtleID2022_t232,"down, front, left, right, top, topleft, topright",43,7
+SeaTurtleID2022_t233,"down, left, right, topleft, topright",11,5
+SeaTurtleID2022_t234,"down, front, left, right, top, topleft, topright",40,7
+SeaTurtleID2022_t235,"left, right, top, topleft, topright",81,5
+SeaTurtleID2022_t236,"front, left, right, top, topleft, topright",93,6
+SeaTurtleID2022_t237,"left, right, top, topleft, topright",31,5
+SeaTurtleID2022_t238,"front, left, right, top, topleft, topright",28,6
+SeaTurtleID2022_t239,"right, top, topleft",7,3
+SeaTurtleID2022_t240,"front, left, right, top, topleft, topright",38,6
+SeaTurtleID2022_t241,"left, right, top, topleft, topright",33,5
+SeaTurtleID2022_t242,"left, right, top, topleft, topright",37,5
+SeaTurtleID2022_t243,"down, front, left, right, top, topleft, topright",190,7
+SeaTurtleID2022_t244,"left, topleft, topright",7,3
+SeaTurtleID2022_t245,"left, right, top, topleft, topright",47,5
+SeaTurtleID2022_t246,"front, left, right, top, topleft, topright",41,6
+SeaTurtleID2022_t248,"left, right, top, topleft, topright",26,5
+SeaTurtleID2022_t249,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t250,"left, right, top, topleft, topright",27,5
+SeaTurtleID2022_t251,"left, right, top, topleft, topright",46,5
+SeaTurtleID2022_t252,"left, right, topleft, topright",10,4
+SeaTurtleID2022_t253,"right, topright",4,2
+SeaTurtleID2022_t254,"left, right, top, topleft, topright",43,5
+SeaTurtleID2022_t255,"front, left, right, top, topleft, topright",21,6
+SeaTurtleID2022_t257,"front, left, right, top, topleft, topright",42,6
+SeaTurtleID2022_t258,"left, right, top, topleft",14,4
+SeaTurtleID2022_t259,"right, top, topleft, topright",14,4
+SeaTurtleID2022_t260,"left, right, top, topleft, topright",41,5
+SeaTurtleID2022_t261,"left, right, top, topleft, topright",30,5
+SeaTurtleID2022_t262,"left, right",9,2
+SeaTurtleID2022_t263,"left, right, top, topleft",24,4
+SeaTurtleID2022_t264,"left, topleft, topright",4,3
+SeaTurtleID2022_t265,"left, right, topleft, topright",13,4
+SeaTurtleID2022_t266,"left, right, topleft, topright",18,4
+SeaTurtleID2022_t267,"left, right, top, topleft, topright",20,5
+SeaTurtleID2022_t268,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t269,"left, right, topleft, topright",19,4
+SeaTurtleID2022_t270,"left, right, top, topleft, topright",6,5
+SeaTurtleID2022_t271,"left, right, top, topleft, topright",14,5
+SeaTurtleID2022_t272,"right, topright",5,2
+SeaTurtleID2022_t273,"left, right, topright",6,3
+SeaTurtleID2022_t274,"right, topleft, topright",5,3
+SeaTurtleID2022_t275,"left, right, topright",4,3
+SeaTurtleID2022_t276,"front, left, right, top, topleft, topright",22,6
+SeaTurtleID2022_t277,"left, topleft",7,2
+SeaTurtleID2022_t278,"right, topleft, topright",7,3
+SeaTurtleID2022_t280,"right, top, topleft",8,3
+SeaTurtleID2022_t281,"down, front, left, right, top, topleft",31,6
+SeaTurtleID2022_t283,"left, right, top, topleft, topright",36,5
+SeaTurtleID2022_t285,"left, top, topleft, topright",17,4
+SeaTurtleID2022_t286,"right, top, topleft, topright",14,4
+SeaTurtleID2022_t287,"left, right, top, topleft, topright",18,5
+SeaTurtleID2022_t288,"left, right, top, topleft, topright",22,5
+SeaTurtleID2022_t289,"left, right, top, topleft, topright",12,5
+SeaTurtleID2022_t291,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t292,"front, left, right, top, topleft, topright",30,6
+SeaTurtleID2022_t293,"left, right, top, topleft, topright",17,5
+SeaTurtleID2022_t294,"left, right, top, topleft, topright",26,5
+SeaTurtleID2022_t295,"front, left, right, top, topleft, topright",49,6
+SeaTurtleID2022_t296,"left, right, topleft, topright",25,4
+SeaTurtleID2022_t297,"left, right, topright",8,3
+SeaTurtleID2022_t298,"left, right, topleft, topright",27,4
+SeaTurtleID2022_t299,"right, top, topleft, topright",7,4
+SeaTurtleID2022_t300,"left, right, topleft, topright",22,4
+SeaTurtleID2022_t301,"left, right, top, topright",18,4
+SeaTurtleID2022_t302,"down, left, right, top, topleft, topright",35,6
+SeaTurtleID2022_t303,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t305,"left, right, top, topleft, topright",42,5
+SeaTurtleID2022_t306,"left, top, topright",9,3
+SeaTurtleID2022_t307,"left, right, top, topleft, topright",10,5
+SeaTurtleID2022_t308,"right, top, topleft",6,3
+SeaTurtleID2022_t309,"left, right, topleft, topright",15,4
+SeaTurtleID2022_t310,"left, right, top, topright",13,4
+SeaTurtleID2022_t311,"left, right, topright",7,3
+SeaTurtleID2022_t312,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t313,"left, right, top",8,3
+SeaTurtleID2022_t314,"left, right, top, topleft, topright",21,5
+SeaTurtleID2022_t315,"left, top, topright",7,3
+SeaTurtleID2022_t316,"left, right, top, topleft, topright",25,5
+SeaTurtleID2022_t317,"left, top, topleft, topright",12,4
+SeaTurtleID2022_t318,"left, right, top, topright",16,4
+SeaTurtleID2022_t319,"left, right, top, topleft, topright",27,5
+SeaTurtleID2022_t320,"left, right, topright",9,3
+SeaTurtleID2022_t321,"left, right, top, topright",21,4
+SeaTurtleID2022_t322,"front, left, right, top, topleft, topright",69,6
+SeaTurtleID2022_t323,"down, front, left, right, top, topleft, topright",149,7
+SeaTurtleID2022_t325,"left, right, topleft, topright",13,4
+SeaTurtleID2022_t327,"left, right, topleft",11,3
+SeaTurtleID2022_t328,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t329,"left, right, top, topright",13,4
+SeaTurtleID2022_t330,"left, right, topleft, topright",17,4
+SeaTurtleID2022_t331,"left, right, top, topleft, topright",16,5
+SeaTurtleID2022_t333,"left, right, top, topleft, topright",41,5
+SeaTurtleID2022_t334,"left, top, topleft, topright",12,4
+SeaTurtleID2022_t335,"left, right, top, topright",19,4
+SeaTurtleID2022_t337,"left, right, top, topright",12,4
+SeaTurtleID2022_t338,"left, right, topleft, topright",19,4
+SeaTurtleID2022_t339,"left, right, topleft",9,3
+SeaTurtleID2022_t340,"left, right, topright",6,3
+SeaTurtleID2022_t341,"right, top, topright",7,3
+SeaTurtleID2022_t342,"left, topleft, topright",6,3
+SeaTurtleID2022_t343,"left, right, top",9,3
+SeaTurtleID2022_t344,"left, right, top, topright",7,4
+SeaTurtleID2022_t345,"top, topright",5,2
+SeaTurtleID2022_t346,"left, right, topleft, topright",6,4
+SeaTurtleID2022_t347,"front, left, right, topright",24,4
+SeaTurtleID2022_t348,"right, top, topright",5,3
+SeaTurtleID2022_t350,"front, left, right, top, topleft, topright",33,6
+SeaTurtleID2022_t351,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t352,"down, front, left, right, top, topleft, topright",31,7
+SeaTurtleID2022_t353,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t354,"front, left, right, top, topleft, topright",31,6
+SeaTurtleID2022_t355,"left, right, top, topleft, topright",9,5
+SeaTurtleID2022_t357,"front, left, right, top",16,4
+SeaTurtleID2022_t358,"left, top, topleft, topright",7,4
+SeaTurtleID2022_t359,"top, topleft",2,2
+SeaTurtleID2022_t360,"left, right, top, topleft, topright",9,5
+SeaTurtleID2022_t361,"left, right, topleft, topright",7,4
+SeaTurtleID2022_t362,"left, right, top, topleft, topright",14,5
+SeaTurtleID2022_t363,"left, right, top, topleft, topright",11,5
+SeaTurtleID2022_t364,"left, right, top, topleft, topright",11,5
+SeaTurtleID2022_t365,"left, topleft, topright",5,3
+SeaTurtleID2022_t366,"left, topleft",5,2
+SeaTurtleID2022_t367,"left, right",3,2
+SeaTurtleID2022_t368,"right, topright",3,2
+SeaTurtleID2022_t369,topleft,3,1
+SeaTurtleID2022_t371,"left, right, topleft, topright",14,4
+SeaTurtleID2022_t372,"left, right, topleft, topright",14,4
+SeaTurtleID2022_t373,"left, right, topleft, topright",23,4
+SeaTurtleID2022_t374,"front, left, right, top, topleft",13,5
+SeaTurtleID2022_t375,"front, left, right",6,3
+SeaTurtleID2022_t376,"left, right, top, topleft, topright",42,5
+SeaTurtleID2022_t377,"left, right",8,2
+SeaTurtleID2022_t378,"left, right",6,2
+SeaTurtleID2022_t379,"left, topleft",5,2
+SeaTurtleID2022_t380,"left, right, top, topleft, topright",16,5
+SeaTurtleID2022_t381,"topleft, topright",2,2
+SeaTurtleID2022_t382,"right, topright",3,2
+SeaTurtleID2022_t383,"right, topright",2,2
+SeaTurtleID2022_t384,"right, topright",3,2
+SeaTurtleID2022_t385,"topleft, topright",9,2
+SeaTurtleID2022_t386,"left, right, top, topleft, topright",32,5
+SeaTurtleID2022_t387,"left, topleft, topright",5,3
+SeaTurtleID2022_t388,"front, left, right, top, topleft, topright",27,6
+SeaTurtleID2022_t389,"front, left, right, topleft, topright",14,5
+SeaTurtleID2022_t390,"left, top, topleft, topright",13,4
+SeaTurtleID2022_t392,"top, topleft, topright",8,3
+SeaTurtleID2022_t393,"left, right, top, topleft",15,4
+SeaTurtleID2022_t395,"right, topleft, topright",9,3
+SeaTurtleID2022_t396,"left, right, top, topleft, topright",32,5
+SeaTurtleID2022_t397,"left, right, top, topleft, topright",46,5
+SeaTurtleID2022_t398,"down, front, left, right, top, topleft, topright",89,7
+SeaTurtleID2022_t399,"right, topleft, topright",10,3
+SeaTurtleID2022_t400,"left, right, topleft",12,3
+SeaTurtleID2022_t401,"left, right, top, topleft, topright",25,5
+SeaTurtleID2022_t402,"left, right, topleft",13,3
+SeaTurtleID2022_t403,"left, top",5,2
+SeaTurtleID2022_t404,left,3,1
+SeaTurtleID2022_t405,"front, left, right, topleft, topright",15,5
+SeaTurtleID2022_t406,"right, topright",5,2
+SeaTurtleID2022_t407,"down, front, left, right, top, topright",35,6
+SeaTurtleID2022_t408,"left, right",6,2
+SeaTurtleID2022_t409,"left, right, topright",11,3
+SeaTurtleID2022_t410,"left, right",12,2
+SeaTurtleID2022_t411,"left, right, topright",6,3
+SeaTurtleID2022_t412,"left, right, top, topleft, topright",17,5
+SeaTurtleID2022_t413,"left, right, topright",13,3
+SeaTurtleID2022_t415,"right, top, topleft, topright",10,4
+SeaTurtleID2022_t417,"left, right, top, topleft, topright",21,5
+SeaTurtleID2022_t418,left,5,1
+SeaTurtleID2022_t419,"left, topright",3,2
+SeaTurtleID2022_t420,"right, topleft, topright",9,3
+SeaTurtleID2022_t421,"left, right, top, topleft, topright",29,5
+SeaTurtleID2022_t422,"left, right, topleft",19,3
+SeaTurtleID2022_t423,"front, left, right, top, topleft, topright",20,6
+SeaTurtleID2022_t424,"left, right, topleft, topright",16,4
+SeaTurtleID2022_t425,right,4,1
+SeaTurtleID2022_t426,"right, top, topleft, topright",13,4
+SeaTurtleID2022_t427,"left, right, top, topleft, topright",35,5
+SeaTurtleID2022_t429,"right, top, topleft, topright",7,4
+SeaTurtleID2022_t430,"left, right, top, topleft",18,4
+SeaTurtleID2022_t431,"right, topleft, topright",5,3
+SeaTurtleID2022_t432,"left, top, topright",8,3
+SeaTurtleID2022_t433,"left, right, top, topleft",9,4
+SeaTurtleID2022_t434,"left, right, topleft, topright",12,4
+SeaTurtleID2022_t435,"topleft, topright",6,2
+SeaTurtleID2022_t436,"left, topleft",5,2
+SeaTurtleID2022_t437,"right, top, topright",6,3
+SeaTurtleID2022_t438,right,4,1
+SeaTurtleID2022_t439,"top, topleft, topright",7,3
+SeaTurtleID2022_t441,"down, front, left, right, top, topleft, topright",108,7
+SeaTurtleID2022_t442,"left, right, topright",19,3
+SeaTurtleID2022_t450,"front, left, topleft, topright",10,4
+SeaTurtleID2022_t451,"right, topright",7,2
+SeaTurtleID2022_t453,"front, left, right, top, topleft",16,5
+SeaTurtleID2022_t459,"left, right, top, topleft, topright",24,5
+SeaTurtleID2022_t467,"left, top, topleft, topright",18,4
+SeaTurtleID2022_t468,"left, right, top, topleft, topright",66,5
+SeaTurtleID2022_t470,"left, right, top, topleft, topright",27,5
+SeaTurtleID2022_t471,"left, right, topleft, topright",18,4
+SeaTurtleID2022_t473,"front, left, right, topright",43,4
+SeaTurtleID2022_t474,"front, left, right, top, topleft, topright",19,6
+SeaTurtleID2022_t478,"left, right, top, topright",15,4
+SeaTurtleID2022_t490,"left, right, topright",6,3
+SeaTurtleID2022_t492,"left, topleft, topright",11,3
+SeaTurtleID2022_t493,"left, right, topleft, topright",17,4
+SeaTurtleID2022_t496,"right, top, topleft, topright",11,4
+SeaTurtleID2022_t497,"left, top, topleft, topright",16,4
+SeaTurtleID2022_t500,"left, right, top, topright",9,4
+SeaTurtleID2022_t514,"left, top, topleft",9,3
+SeaTurtleID2022_t518,"left, right, top, topleft",13,4
+SeaTurtleID2022_t522,"front, left, right, top, topleft, topright",86,6
+SeaTurtleID2022_t524,"left, right, topleft",6,3
+SeaTurtleID2022_t527,"left, topright",9,2
+SeaTurtleID2022_t528,"left, right, topright",14,3
+SeaTurtleID2022_t544,"left, right, top, topleft, topright",7,5
+SeaTurtleID2022_t547,"left, right",5,2
+SeaTurtleID2022_t548,"left, top, topleft",8,3
+SeaTurtleID2022_t553,"left, right, top, topleft, topright",19,5
+SeaTurtleID2022_t554,"right, topright",8,2
+SeaTurtleID2022_t559,"top, topleft, topright",6,3
+SeaTurtleID2022_t566,"right, topleft, topright",7,3
+SeaTurtleID2022_t567,"left, right, topleft, topright",10,4
+SeaTurtleID2022_t568,"top, topleft, topright",11,3
+SeaTurtleID2022_t570,"left, right, topleft, topright",13,4
+SeaTurtleID2022_t584,"left, right, topleft, topright",9,4
+SeaTurtleID2022_t585,"left, top, topleft, topright",13,4
+SeaTurtleID2022_t586,"right, topright",7,2
+SeaTurtleID2022_t589,"front, left, right, top, topright",10,5
+SeaTurtleID2022_t590,"left, top, topleft",13,3
+SeaTurtleID2022_t591,"front, left, right, top, topleft, topright",17,6
+SeaTurtleID2022_t594,"front, left, right",9,3
+SeaTurtleID2022_t600,"left, right, top, topleft, topright",15,5
+SeaTurtleID2022_t603,"left, right, topleft, topright",12,4
+SeaTurtleID2022_t610,"left, right, top, topleft",14,4
