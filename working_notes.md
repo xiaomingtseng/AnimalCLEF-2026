@@ -86,34 +86,71 @@
 
 ---
 
+---
+
+## Session 3: Repo Cleanup & Next Phase Planning (2026-03-26)
+
+### 完成工作
+✅ 建立 `CLAUDE.md`（專案架構與常用指令文件）
+
+✅ 重構共用邏輯至 `baseline_config.py`：
+- `OFFICIAL_EPS` dict（各 dataset 的 DBSCAN eps）
+- `similarity_to_distance()`（cosine similarity → DBSCAN distance）
+- `main.py` 與 `generate_submission_orientation_aware.py` 改為 import 此模組
+
+✅ 移除 MiewID fallback（已確認與 transformers 4.x 相容）
+
+✅ 刪除不再需要的檔案（test scripts、診斷工具、多餘 CSV）
+
+### 下一步方向（按優先順序）
+1. **換更強的預訓練模型**（零訓練成本）
+   - DINOv2（ViT backbone，視角魯棒性優於 ResNet 系）
+   - MegaDescriptor-L-448（更大 input size）
+2. **Fine-tune embedding**（最高優先，高效益）
+   - 用 train split（有 identity label）做 metric learning
+   - Triplet loss 或 ArcFace
+   - `wildlife-tools` 有內建 `EmbeddingTrainer` 可直接使用
+3. **SeaTurtle 專項優化**（佔 >50% 資料，改善影響最大）
+   - 利用 `orientation` 欄位分離 head closeup vs full-body
+
+---
+
 ## 實驗日誌 (Experiment Log)
 
-### Exp 1: Baseline v1 (MegaDescriptor-L-384)
-**Status**: ✅ Done
+### Exp 1: Official Baseline 復現（MegaDescriptor + MiewID）
+**Status**: ✅ Done（確認與官方 starter notebook 同一條線，非真正實驗）
 
 **Config**:
-- Model: MegaDescriptor-L-384 (384-D)
+- Models（兩個模型）:
+  - `MegaDescriptor-L-384`：SalamanderID2025、SeaTurtleID2022
+  - `MiewID-MSV3`：LynxID2025、TexasHornedLizards
+- ⚠️ **transformers 需降版**：MiewID 與最新版 transformers 不相容，需 pin 到舊版才能正常載入
 - Clustering: DBSCAN with dataset-specific eps
 - Device: CUDA (RTX 3050 Laptop, 4GB VRAM)
 - Batch size: 2-4
+- Eps: LynxID2025=0.30, SalamanderID2025=0.20, SeaTurtleID2022=0.40, TexasHornedLizards=0.24
 
 **Results**:
-- Public score: `0.14602`
-- Eps grid search: LynxID2025=0.30, SalamanderID2025=0.20, SeaTurtleID2022=0.40, TexasHornedLizards=0.24
+- Public score: `0.19401`（= 官方 baseline，無改善）
 
 **Notes**:
-- Eps 調整空間有限（±0.05 觀察不到顯著改變）
-- UMAP 診斷顯示 embedding 混亂（大部分點都是 noise）
-- 需要改善 embedding 品質，不是聚類參數問題
+- 這個分數只是確認本地環境能正確復現官方結果，不算實驗進展
+- Eps grid search 調整空間有限（±0.05 幾乎無效）
+- UMAP 診斷：全部 dataset 幾乎 100% noise，根本問題是 embedding 品質而非聚類參數
 
-### Exp 2: Embedding Improvement (Next phase)
+---
+
+> ⬆ 以上為 baseline 確認階段，以下才是真正的實驗
+
+---
+
+### Exp 2: Embedding 改善（進行中）
 **Status**: ⏳ Planning
 
 **Candidates**:
-1. Fine-tune on training data with contrastive loss
-2. Try ViT backbone instead of ResNet-based
+1. DINOv2 / ViT backbone（zero-shot，直接替換 MegaDescriptor）
+2. Fine-tune on training split with triplet loss / ArcFace
 3. Ensemble multiple models
-4. Custom loss for identity clustering
 
 ---
 
@@ -125,4 +162,4 @@
 
 ---
 
-**Last Updated**: 2026-03-21
+**Last Updated**: 2026-03-26
