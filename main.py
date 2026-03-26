@@ -18,27 +18,21 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import DBSCAN
 
+from baseline_config import OFFICIAL_EPS, similarity_to_distance
+
 
 def relabel_negatives(labels: np.ndarray) -> np.ndarray:
     """Turn DBSCAN noise points (-1) into single-image clusters."""
-    labels = np.array(labels, dtype=np.int64)
+    labels = np.array(labels)
     neg_indices = np.where(labels == -1)[0]
-    if len(neg_indices) == 0:
-        return labels
-
-    start = labels[labels >= 0].max() + 1 if np.any(labels >= 0) else 0
-    labels[neg_indices] = np.arange(start, start + len(neg_indices), dtype=np.int64)
+    new_labels = np.arange(labels.max() + 1, labels.max() + 1 + len(neg_indices))
+    labels[neg_indices] = new_labels
     return labels
 
 
 def run_dbscan(similarity: np.ndarray, eps: float, min_samples: int = 2) -> np.ndarray:
     """Cluster a similarity matrix by converting it to a precomputed distance matrix."""
-    similarity = np.asarray(similarity, dtype=np.float32)
-    max_sim = float(np.max(similarity))
-    if max_sim <= 0:
-        distance = np.ones_like(similarity, dtype=np.float32)
-    else:
-        distance = (max_sim - np.maximum(similarity, 0.0)) / max_sim
+    distance = similarity_to_distance(similarity)
 
     clustering = DBSCAN(eps=eps, metric="precomputed", min_samples=min_samples)
     labels = clustering.fit(distance).labels_
@@ -80,12 +74,7 @@ def build_submission(
     for name in dataset_full.metadata["dataset"].unique():
         datasets[name] = dataset_full.get_subset(dataset_full.metadata["dataset"] == name)
 
-    eps_opt = {
-        "LynxID2025": 0.30,
-        "SalamanderID2025": 0.20,
-        "SeaTurtleID2022": 0.40,
-        "TexasHornedLizards": 0.24,
-    }
+    eps_opt = dict(OFFICIAL_EPS)
     if eps_overrides:
         eps_opt.update(eps_overrides)
 
@@ -93,23 +82,12 @@ def build_submission(
     results = []
 
     def load_miewid_with_fallback():
-        """Load MiewID and handle transformers compatibility breakage gracefully."""
-        try:
-            return AutoModel.from_pretrained(
-                "conservationxlabs/miewid-msv3",
-                trust_remote_code=True,
-                low_cpu_mem_usage=False,
-            ).eval(), 512, "miewid-msv3"
-        except AttributeError as exc:
-            if "all_tied_weights_keys" not in str(exc):
-                raise
-
-            print(
-                "[WARN] MiewID is incompatible with current transformers version; "
-                "falling back to MegaDescriptor-L-384 for this dataset."
-            )
-            model = timm.create_model("hf-hub:BVRA/MegaDescriptor-L-384", pretrained=True).eval()
-            return model, 384, "MegaDescriptor-L-384 (fallback)"
+        """Load MiewID - now compatible with transformers 4.x."""
+        return AutoModel.from_pretrained(
+            "conservationxlabs/miewid-msv3",
+            trust_remote_code=True,
+            low_cpu_mem_usage=False,
+        ).eval(), 512, "miewid-msv3"
 
     for name, dataset in datasets.items():
         if name in ["SalamanderID2025", "SeaTurtleID2022"]:
@@ -134,7 +112,7 @@ def build_submission(
         features = extractor(dataset)
         similarity = matcher(features, features)
 
-        eps = eps_opt.get(name, 0.25)
+        eps = eps_opt.get(name, 0.35)
         clusters = run_dbscan(similarity, eps=eps)
         result = pd.DataFrame(
             {

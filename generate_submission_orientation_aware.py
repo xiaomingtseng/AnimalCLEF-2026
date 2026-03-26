@@ -23,6 +23,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from wildlife_datasets.datasets import AnimalCLEF2026
 from wildlife_tools.features import DeepFeatures
 
+from baseline_config import OFFICIAL_EPS, similarity_to_distance
+
 
 def relabel_negatives(labels: np.ndarray) -> np.ndarray:
     """Turn DBSCAN noise points (-1) into single-image clusters."""
@@ -39,11 +41,7 @@ def relabel_negatives(labels: np.ndarray) -> np.ndarray:
 def run_dbscan(features: np.ndarray, eps: float, min_samples: int = 2) -> np.ndarray:
     """Cluster features using DBSCAN."""
     similarity = cosine_similarity(features, features)
-    max_sim = float(np.max(similarity))
-    if max_sim <= 0:
-        distance = np.ones_like(similarity, dtype=np.float32)
-    else:
-        distance = (max_sim - np.maximum(similarity, 0.0)) / max_sim
+    distance = similarity_to_distance(similarity)
 
     clustering = DBSCAN(eps=eps, metric="precomputed", min_samples=min_samples)
     labels = clustering.fit(distance).labels_
@@ -184,9 +182,9 @@ def build_submission(
 
     # Eps configuration
     eps_baseline = {
-        "LynxID2025": 0.30,
-        "SalamanderID2025": 0.20,
-        "TexasHornedLizards": 0.24,
+        "LynxID2025": OFFICIAL_EPS["LynxID2025"],
+        "SalamanderID2025": OFFICIAL_EPS["SalamanderID2025"],
+        "TexasHornedLizards": OFFICIAL_EPS["TexasHornedLizards"],
     }
 
     eps_turtle = {
@@ -234,7 +232,7 @@ def build_submission(
         ])
 
         dataset.set_transform(transform)
-        features = extractor(dataset).features
+        features = extractor(dataset)  # ✓ 直接回傳 numpy array
 
         print(f"Model: {model_name}, Features: {features.shape}")
 
@@ -246,7 +244,7 @@ def build_submission(
             )
         else:
             # Baseline clustering
-            eps = eps_baseline.get(name, 0.30)
+            eps = eps_baseline.get(name, 0.35)
             result = cluster_baseline_dataset(dataset, features, eps, name)
 
         results.append(result)
