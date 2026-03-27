@@ -144,13 +144,24 @@
 
 ---
 
-### Exp 2: Embedding 改善（進行中）
-**Status**: ⏳ Planning
+### Exp 2: Embedding 改善
 
-**Candidates**:
-1. DINOv2 / ViT backbone（zero-shot，直接替換 MegaDescriptor）
-2. Fine-tune on training split with triplet loss / ArcFace
-3. Ensemble multiple models
+**❌ Track A: DINOv2-B zero-shot — 無效，勿重試**
+- Within/between-class 距離嚴重重疊（ARI < 0.05），與 MegaDescriptor 同樣 viewpoint-sensitive
+- 最佳 eps 下幾乎全是 singletons，無法形成有意義的 cluster
+
+**❌ Track B v1: ArcFace fine-tune — 0.1641，比 baseline 差**
+- ARI 在 train split 上看起來好（SeaTurtleID2022 0.66），但 eps 是在模型已見過的圖上 calibrate，test 上距離更大 → eps 偏小
+- 更根本問題：ArcFace 優化已知 identity，test 有完全沒見過的個體與物種（TexasHornedLizards 是全新物種）→ 泛化能力下降
+
+**v4 調 eps 無感 → 確認是泛化問題，不是 eps**
+
+根本原因：ArcFace fine-tune 造成 embedding collapse — within-class 距離縮小，但 between-class 也跟著縮小，整個空間壓縮，不同個體擠在一起。調 eps 治標不治本。
+
+**⏳ 下一步：K-reciprocal re-ranking on baseline embedding**
+- 不動模型，用 pretrained MegaDescriptor/MiewID 原始 embedding
+- K-reciprocal re-ranking 修正 similarity matrix 再 clustering
+- 方向正確：尊重 pretrained 泛化能力，改善 clustering 策略
 
 ---
 
